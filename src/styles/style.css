@@ -1,0 +1,101 @@
+html {
+    font-size: 62.5%;
+  }
+
+  body {
+    background: #f1f1f1;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+  }  
+
+.parentContainer {
+    width: 100%;
+}  
+
+.carContainer {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+     
+}
+
+.carCard {
+    border: 1px solid gray;
+    width: 29%;
+    line-height: .5rem;
+    margin: 1.8rem 1rem;
+    background: lightgray;
+}
+
+.carImage{
+    margin: 0 auto;
+    width: 100%;
+    height: 16rem;
+    overflow: hidden;
+}
+
+.carDetails{
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.carInfo{
+    display: flex;
+    flex-direction: column;  
+}
+
+button{
+    width: 80%;
+    margin: auto;
+    border-radius: 1rem;
+    background: rgb(105, 105, 105);
+    border: none;
+    color:whitesmoke;
+    font-weight: 500;
+    padding: .3rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.filterContainer{
+    margin: 2rem auto;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.header{
+    padding: 0 2.5rem;
+    line-height: 1rem;
+}
+
+.filterContainer input{
+    border: 1px solid black;
+    padding: .3rem;
+    border-radius: .6rem;
+}
+
+select{
+    border-radius: .6rem;
+    height: 2.5rem;
+    border: 1px solid black;
+}
+
+@media (max-width: 52rem) {
+    .carContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .carCard{
+        width: 80%;
+        margin: 1.8rem auto;
+    }
+  }
+  
